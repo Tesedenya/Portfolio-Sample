@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/406b80bab2.js" crossorigin="anonymous"></script>
+  <script> 
+
+    function changeImage()
+    {
+    var img = document.getElementById("image");
+    img.src="Resource/images/work-hard.jpg";
+    return false;
+    }
+      </script>
+</head>
+  
+  <!--body-->
+<body>
+  <div class="container-fluid">
+    <!--Header-->
+    <div class="row" id="header">
+      <div class="col">
+      
+      </div>
+      <div class="col">
+        <p> Hello Jwd</p>
+        <h1>Your Name</h1>
+       <p>Junior Web Developer</p>
+      </div>
+      <div class="col">
+        <image src="Resource/images/profile_pic.jpg" class="img-fluid" alt="Sam's picture">
+      </div>
+    </div>
+    
+    <!--Links-->
+    <div class="row" id="links">
+    
+    <div class="col">
+    <a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="www.github.com"><i class="fa-brands fa-github"></i></a>
+    <a href="www.gmail.com"><i class="fas fa-at"> </i></a>
+    </div>
+    </div>
+    
+    <!--<button id="clickme" onclick="changeImage();">Click to change image!</button>-->
+    
+  <!--Main Content-->
+  <div class="row" id="main">
+      <div class=col>
+      <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Expriences'),changeImage();">Expriences</button>
+  <button class="tablinks" onclick="openCity(event, 'Skills')">Skills</button>
+  <button class="tablinks" onclick="openCity(event, 'Projucts')">Projucts</button>
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>An ’About Me’ page is one of the most important parts of your portfolio, website, or blog. This page is where prospective employers, potential clients, website users, and other professional and personal connections go to learn about who you are and what you do. And it's an ideal resource for promoting your professional brand.</p>
+</div>
+
+<div id="Expriences" class="tabcontent">
+  <h3>Expriences</h3>
+  <table>
+  <tr>
+    <th>Positions</th>
+    <th>Company Name</th>
+    <th>List of Tasks</th>
+    <th>Date</th>
+  </tr>
+  <tr>
+    <td>Junior Web Developer</td>
+    <td>ABC Tecnology</td>
+    <td><ul>
+      <li>one</li>
+      <li>two</li>
+    </ul></td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table> 
+</div>
+
+<div id="Skills" class="tabcontent">
+  <h3>My Top Skills</h3>
+  <p><i class="fa fa-lightbulb-o"></i> Creative</p>
+  <ul>
+    <li>Relating to or involving the imagination or original ideas, especially in the production of an artistic work.</li>
+    <li>"change unleashes people's creative energy"</li>
+  </ul>
+  <p><i class="fa-solid fa-user-group"></i> Great Team Player</p>
+  <ul>
+    <li>You understand your role As a team member, you understand your role within the team and work to achieve your duties.</li>
+    <li>You welcome collaboration Working with a team means there will be varying opinions and ideas. Even if you think your.</li>
+    <li>You hold yourself accountable Take responsibility for</li>
+  </ul>
+  <p> <i class="fa-solid fa-bullseye-arrow"></i>Goal Oriented</p>
+  <ul>
+    <li>Commit Your Measurable Goals to Writing. One of the simplest ways to become more goal-oriented is to commit your goals.</li>
+    <li>Plan and Track Your Time. Sometimes it can be hard to determine if we’re working hard or hardly working. What happens if...</li>
+    <li>Confide In and Work with an Accountability Buddy. Humans weren’t meant to go it alone. That’s why we...</li>
+  </ul>
+</div>
+  <div id="Projucts" class="tabcontent">
+  <h3>Projucts</h3>
+  <p></p>
+</div>
+  
+  <div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p><i class="fa-solid fa-mobile-screen-button"></i>+1 555-555-555</p>
+  <a href="jwd@gmail.com"><i class="fa-solid fa-at"></i>Jwd@gmail.com</a>
+  <p><i class="fa-solid fa-house"></i>Present Address</p>
+  </div>
+  
+   </div>  
+    
+      <div class=col-3 id="image-2">
+        <img id="image" src="Resource/images/mobile.jpg">
+   
+    </div>
+    </div
+    </div>
+     
+   
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+  <!--footer-->
+    <div class="row" id="footer">
+      <div class="col">
+      <p><i class="fa-solid fa-copyright"></i> Your Name</p>
+      </div>
+      </div>
+  
+</html> 
