@@ -114,7 +114,7 @@ th{
 }
 #footer{
   background-color: #747760;
-  margin-top: 5%;
+ 
   padding: 22px 16px;
   text-align: center;
   border: 5px outset #FFFBE9;
@@ -128,3 +128,9 @@ th{
     from {background-color: #dfedd6}
     to {background-color: #747760;}
   }
+#projectLinks i{
+  marign-left: 50%;
+  font-size:70px;
+    color:#c86a3c;
+    padding: 5%;
+}
