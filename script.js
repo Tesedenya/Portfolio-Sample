@@ -12,9 +12,3 @@ document.getElementById(tabName).style.display = "block";
 evt.currentTarget.className += " active";
 } 
 
-function changeImage()
- {
-var img = document.getElementById("image");
-img.src="Resource/images/work-hard.jpg";
- return false;
- }

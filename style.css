@@ -1,3 +1,11 @@
+body{
+  background-image: url("Resource/images/backgroung.jpg");
+  height: 1000px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
 #header{
   margin-top: 5%;
   background-color: #747760;
@@ -133,4 +141,8 @@ th{
   font-size:70px;
     color:#c86a3c;
     padding: 5%;
+}
+/*============IMAGE IN THE CARDS============*/
+.card-img-top{
+  height: 300px;
 }

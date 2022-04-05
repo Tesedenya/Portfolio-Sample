@@ -5,15 +5,24 @@
 <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/406b80bab2.js" crossorigin="anonymous"></script>
-    <script src='script.js'> </script>
+    
+  <script>
+    function changeImage()
+     {
+    var img = document.getElementById("image");
+    img.src="Resource/images/work-hard.jpg";
+     return false;
+     }
+  </script>
+  <script src='script.js'> </script>
     
 </head>
     
-  <!--body-->
-<!------------------------------------------------------------------------------------------->
+
+<!--===================BODY===============================-->
 <body>
   <div class="container-fluid">
-<!--Header====================================================================================================================-->
+<!--====================HEADER============================================================================================-->
     <div class="row" id="header">
       <div class="col">
       
@@ -28,8 +37,7 @@
       </div>
     </div>
     
-    <!--Links-->
-<!------------------------------------------------------------------------------------------->
+    <!--=================TOP LNKS=========================-->
     <div class="row" id="links">
     
     <div class="col">
@@ -41,8 +49,7 @@
     <br></br>
     <!--<button id="clickme" onclick="changeImage();">Click to change image!</button>-->
     
-  <!--Main Content-->
-<!------------------------------------------------------------------------------------------->
+  <!--===============MAIN CONTENT=========================-->
   <div class="row" id="main">
       <div class=col>
       <div class="tab">
@@ -53,14 +60,13 @@
   <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
 </div>
         
-<!--About section-->
-<!------------------------------------------------------------------------------------------->
+<!--=================ABOUT=========================-->
 <div id="About" class="tabcontent">
   <h3>Personal Profile</h3>
   <p>Goal oriented and adaptable professional with experience in Web Development and Database Administration. Great written and verbal communicator with ability to multitask and creatively approach problem solving. Strong team player motivated and self-driven to increase abilities and make a positive impact on team projects.</p>
 </div>
-<!--Expriences section-->
-<!------------------------------------------------------------------------------------------->
+        
+<!--=================EXPRIENCES========================-->
 <div id="Expriences" class="tabcontent">
   <h3>Expriences</h3>
   <table>
@@ -107,8 +113,8 @@
     </tr>
 </table> 
 </div>
-<!--Skills section-->
-<!------------------------------------------------------------------------------------------->
+        
+<!--=================SKILLS=========================-->
 <div id="Skills" class="tabcontent">
   <h3>My Top Skills</h3>
   <p><i class="fa fa-lightbulb-o"></i> Creative</p>
@@ -129,29 +135,49 @@
     <li>Confide In and Work with an Accountability Buddy. Humans weren’t meant to go it alone. That’s why we...</li>
   </ul>
 </div>
-<!--Projects section-->
-<!------------------------------------------------------------------------------------------->
+
+  <!--===============PROJUCTS=========================-->
 
   <div id="projects" class="tabcontent">
   <h3>Projects</h3>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="Resource/images/project1.jpeg" alt="...">
+        <div class="card" style="width: 18rem;">
+        <img src="Resource/images/recurtion.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Excursion</h5>
+          <p class="card-text">Emplementing How to creat a webpage</p>
+          <a href="https://github.com/Tesedenya/excursion1" class="btn btn-primary">GitHub</a>
+        </div>
+      </div>
         <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
       </div>
       </div>
       <div class="carousel-item">
-        <img src="Resource/images/project2.jpeg" alt="...">
+        <div class="card" style="width: 18rem;">
+          <img src="Resource/images/project2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio</h5>
+            <p class="card-text">Emplemented using BootStrap and JavaScript</p>
+            <a href="https://tesedenya.github.io/Portfolio-Sample/" class="btn btn-primary">GitHub</a>
+          </div>
+        </div>
         <div class="carousel-caption d-none d-md-block">
         <h5>Sample Portfolio Website</h5>
-        <a href="https://tesedenya.github.io/">https://tesedenya.github.io/ </a>
-      </div>
+       </div>
       </div>
       <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+         <div class="card" style="width: 18rem;">
+        <img src="Resource/images/project1.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Camera Format Site</h5>
+          <p class="card-text">Emplementing How to creat a webpage</p>
+          <a href="https://github.com/Tesedenya/excursion1" class="btn btn-primary">GitHub</a>
+        </div>
+      </div>
       </div>
     </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -165,8 +191,8 @@
 </div>
      
   </div>
-  <!--Contact section-->
-<!------------------------------------------------------------------------------------------->
+        
+  <!--=================CONTACTS=========================-->
   <div id="Contact" class="tabcontent">
   <div class="container">
   <div style="text-align:left">
@@ -179,16 +205,12 @@
     </div>-->
     <div class="column">
       <form action="/action_page.php">
-        <label for="fname">First Name</label>
+        <label for="fname">Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="ethiopia">Ethiopia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
+        <br><br>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="Email" placeholder="Your E-Mail..">
+        <br><br>
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
         <input type="submit" value="Submit">
@@ -208,6 +230,8 @@
     </div>
   </div>
 </div>
+  
+  <!--=================LNKS=========================-->
 
 <div class="row" id="projectLinks">   
   <div class="col">
@@ -227,9 +251,11 @@
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"> </script> 
 </body>
-  <!--footer------------------------------------------------------------------------------------------------------------->
+  
+  <!--=================FOOTER=========================-->
     <div class="row" id="footer">
       <div class="col">
       <p><i class="fa-solid fa-copyright"></i>2022</p>
