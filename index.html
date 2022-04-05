@@ -14,8 +14,8 @@
      return false;
      }
   </script>
-  <script src='script.js'> </script>
-    
+  <script src='./script.js'> </script>
+   <script defer src='./index.js'> </script> 
 </head>
     
 
@@ -78,14 +78,13 @@
     <th>Addresses</th>
   </tr>
   <tr>
-    <td>Shift Superviso</td>
-    <td>Starbucks</td>
+    <td>Junior Web Development Program </td>
+    <td>Generation USA</td>
     <td><ul>
-      <li>Maintain customer satisfaction.</li>
-      <li>Supervise team of 5 employees per shift.</li>
+      <li>Participating in a 21-week Junior Web Developer program learning how responsive web development works, from wireframing to the Intermediate of JavaScript computer programming.</li>
     </ul></td>
-    <td>November 2018 until Now part time</td>
-    <td>Alexandria, VA</td>
+    <td>Jan 2022- Apr 2022</td>
+    <td>Washington, D.C</td>
   </tr>
   <tr>
     <td>Junior Information Technology officer</td>
@@ -94,7 +93,6 @@
     
     <td><ul>
         <li>Collaborated   across   7   teams, to develop Enterprise   Resource Project.</li>
-        <li>Developed Oracle   App   form   and report customization to ensure use of effective procurement module.</li>
         </ul>
     </td>
     <td>February 2015-Nov 2016</td>
@@ -196,25 +194,26 @@
   <div id="Contact" class="tabcontent">
   <div class="container">
   <div style="text-align:left">
-    <h2>Contact Me</h2>
-    <p>Check My Portfolio and Leave Me a Message:</p>
+    
+    <h3>Check My Portfolio and Leave Me a Message:</h3>
   </div>
   <div class="row">
-    <!--<div class="column">
-      <img src="/w3images/map.jpg" style="width:100%">
-    </div>-->
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+     <div class="column">
+      <form action="/" id="form">
+        <label for="fullName">Name</label>
+        <input class="" type="text" id="fullName" name="fullName" placeholder="Your name..">
+        <div class="error-hint hidden">Your Name is Required.</div>
         <br><br>
         <label for="email">E-mail</label>
         <input type="text" id="email" name="Email" placeholder="Your E-Mail..">
         <br><br>
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
+        <input id="submit" type="submit" value="Submit">
       </form>
+       <div class="thankYou hidden">
+         Thank You for your Feedback!!!
+       </div>
     </div>
   </div>
 </div>
