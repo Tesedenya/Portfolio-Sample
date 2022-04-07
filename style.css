@@ -197,12 +197,15 @@ th{
 #line{
   width: 100%;
   border: 2px solid #747760;
+  display: cover;
 }
 #projectLinks i{
-  marign-left: 50%;
-  font-size:70px;
-    color:#c86a3c;
-    padding: 5%;
+  marign-left: 30%;
+  font-size: 70px;
+  color:#c86a3c;
+  padding-right: 5%;
+  passing-top: 5%;
+   
 }
 /*============IMAGE IN THE CARDS============*/
 .card-img-top{
