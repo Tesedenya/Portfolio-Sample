@@ -1,5 +1,16 @@
 /*==========CONTACT FORM ===================*/
-
+#form{
+  height: 400px;
+  padding-top: 0.5%;
+  display: block;
+}
+label{
+  font-size: 20px;
+}
+#button{
+  padding-left: 75px;
+  padding-top: 20px;
+}
 input.invalid{
   border: 2px solid red;
 }
@@ -8,13 +19,15 @@ input.invalid{
   margin-left: 20%;
 }
 #submit{
-  padding:10px;
+  padding:3px;
   background: none;
   border: 2px solid #747760;
   border-radius: 10px;
-  margin-left: 20%;
+  margin: center;
   transition: all 1s;
   cursor: pointer;
+  width: 120px;
+  font-size: 20px;
 }
 #submit:hover{
   background-color: #747760;
@@ -31,6 +44,7 @@ input.invalid{
   font-size: 40px;
   text-align: center;
 }
+/*===========Main==========*/
 #header{
   margin-top: 5%;
   background-color: #747760;
@@ -56,6 +70,9 @@ input.invalid{
   border-radius: 50%;
   width: 130px;
   hight: 130px;
+ }
+#subHeader p{
+  padding-right: 30px;
 }
 #image-2, #image{
   width:400px;
@@ -74,7 +91,19 @@ input.invalid{
 #links{
   background-color: #dfedd6;
   margin-top: 5%;
+  padding-left: 50%;
   padding: 0.5%;
+  color:#c86a3c;
+  margin: center;
+}
+.email{
+  color:black;
+}
+#projectLinks h3{
+  align: center;
+  margin-top: 5%;
+  padding: 0.5%;
+  color:#c86a3c; 
 }
 i{
     font-size:30px;
@@ -154,6 +183,10 @@ th{
   text-align: center;
   border-radius: 10%;
 }
+#footer p{
+  text-size: 10px;
+  padding: 20px;
+}
 #links{
   animation: mymove 5s infinite;
 }
@@ -161,6 +194,10 @@ th{
     from {background-color: #dfedd6}
     to {background-color: #747760;}
   }
+#line{
+  width: 100%;
+  border: 2px solid #747760;
+}
 #projectLinks i{
   marign-left: 50%;
   font-size:70px;
